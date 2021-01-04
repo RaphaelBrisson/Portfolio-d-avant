@@ -1,0 +1,1 @@
+"C:\Web\Projets\Portfolio\www - fr\css\dart-sass\sass" "C:\Web\Projets\Portfolio\www - fr\css\scss\index.scss" "C:\Web\Projets\Portfolio\www - fr\css\index.css" --watch

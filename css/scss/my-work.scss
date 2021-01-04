@@ -1,0 +1,255 @@
+///////////////
+//MY WORK
+///////////////
+
+
+
+#my-work
+{
+	div#work-container
+	{
+		display: grid;
+		grid-template-columns: repeat(3, auto) ;
+		grid-gap: 27px;
+
+		div.work
+		{
+			position: relative;
+			box-shadow: 2px 5px 20px rgba(14,11,83,0.15);
+			transition: transform 0.5s ease-in-out;
+			border-radius: 8px;
+
+			a
+			{
+				position: absolute;
+				top: 0;
+				bottom: 0;
+				right: 0;
+				left: 0;
+
+			}
+
+
+
+			.text-hover
+			{
+				position: absolute;
+				top: 0;
+				bottom: 0;
+				right: 0;
+				left: 0;
+				opacity: 0;
+				transition: opacity 0.5s ease-in-out;
+	
+				.name
+				{
+					font-weight: 500;
+					position: absolute;
+					left: 0;
+					right: 0;
+					top: 5%;
+					color: $blue;
+					margin: auto;
+					font-size: 25px;
+					font-weight: 500;
+				}
+
+				.description
+				{
+					font-weight: 700;
+					position: absolute;
+					left: 0;
+					right: 0;
+					top: 22%;
+					color: $blue;
+					margin: auto;
+				}
+
+				.description2
+				{
+					font-weight: 500;
+					position: absolute;
+					left: 0;
+					right: 0;
+					top: 40%;
+					color: $blue;
+					margin: auto;
+					font-size: 20px;
+					width: 94%;
+				}
+
+			}
+			
+
+		}
+
+
+		.work:hover
+		{
+			transform: scale(1.04);
+
+			.text-hover
+			{
+				opacity: 1;
+			}
+			
+			img
+			{
+				opacity: 0.15;
+			}
+		}
+		
+	}
+
+	img
+	{
+		width: 100%;
+		margin: auto;
+		transition: opacity 0.5s ease-in-out;
+		display: block;
+		border-radius: 6px;
+	}
+
+	p
+	{
+		text-align: center;
+		font-family: 'Montserrat', sans-serif;
+		font-size: 30px;
+		font-weight: 700;
+		padding: 50px 0 50px 0;
+	}
+	
+	p#more
+	{
+		text-align: center;
+		font-family: 'Montserrat', sans-serif;
+		font-size: 20px;
+		font-weight: 700;
+		color: $blue;
+		padding: 50px 0 50px 0;
+		cursor: pointer;
+	}
+
+	.hidden-work
+	{
+		display: none;
+	}
+}
+
+strong
+{
+	font-weight: 700;
+}
+
+h2
+{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 55px;
+	font-weight: 600;
+	text-align: center;
+	color: $orange;
+	padding-top: 100px;
+	padding-bottom: 100px;
+}
+
+
+
+
+
+@media all and (max-width: 1170px)
+{
+
+}
+
+@media all and (max-width: 980px)
+{
+	#my-work div#work-container
+	{
+		grid-template-columns: repeat(2, auto);
+		width: 92%;
+		margin: auto;
+
+		.work:hover
+		{
+
+			transform: scale(1);
+
+			.text-hover
+			{
+				opacity: 0;
+			}
+			
+			img
+			{
+				opacity: 1;
+			}
+		}
+
+
+	}	
+}
+
+@media all and (max-width: 768px)
+{
+	#my-work p
+	{
+		padding: 30px 0 30px 0;
+	}
+
+}
+
+@media all and (max-width: 480px)
+{
+
+	br
+	{
+		display: block; /* makes it have a width */
+        content: ""; /* clears default height */
+        margin-top: 10px;
+	}
+
+	#my-work div#work-container
+	{
+		grid-template-columns: repeat(1, auto);
+		width: 90%;
+	}
+
+	#my-work div#work-container div.work .text-hover .name
+	{
+		top: 0%;
+	}
+
+
+
+
+	#my-work div#work-container div.work .text-hover .description2
+	{
+		font-size: 17px;
+	}
+}
+
+@media all and (max-width: 320px)
+{
+	#my-work div#work-container
+	{
+		width: 98%;
+	}
+
+	#my-work div#work-container div.work .text-hover .name
+	{
+		font-size: 22px;
+		top: -10px;
+	}
+
+	#my-work div#work-container div.work .text-hover .description
+	{
+		top: 18%;
+		font-size: 27px;
+	}
+
+	#my-work div#work-container div.work .text-hover .description2
+	{
+		font-size: 16px;
+		top: 34%;
+	}
+}

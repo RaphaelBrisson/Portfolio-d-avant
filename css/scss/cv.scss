@@ -1,0 +1,136 @@
+#cv
+{	
+	max-width: 1920px;
+	margin-left: auto;
+	margin-right: auto;	
+	opacity: 0;
+	transition-duration: 0.5s;
+	background: #f2f2f2;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	overflow-x: hidden; 
+
+	div a
+	{
+		transform: translateX(100%);
+		transition-duration: 0.5s;
+		width: 320px;
+		height: 60px;
+		border: 3px solid $orange;
+		border-radius: 5px;
+		display: flex;
+		margin: auto;
+		transition: 0.5s;
+		padding-left: 13px;
+
+		p
+		{
+			font-family: 'Montserrat', sans-serif;
+			font-weight: 500;
+			font-size: 23px;
+			color: $orange;
+			text-align: center;
+			margin: auto;
+		}
+	}
+}
+
+
+
+#cv div a:hover
+	{
+		padding-right: 8px;
+
+		-webkit-animation: pulsate-fwd 0.5s ease-in-out infinite both;
+		        animation: pulsate-fwd 0.5s ease-in-out infinite both;
+
+		p{
+				-webkit-animation: orange-change 0.5s ease-in-out infinite both;
+		        animation: orange-change 0.5s ease-in-out infinite both;
+
+		}
+	}
+	#cv div a p:after {
+		content: '  \00bb';
+		font-family: 'Montserrat', sans-serif;
+		font-weight: 400;
+		font-size: 23px;
+		color: $orange;
+		text-align: center;
+		margin: auto;
+		opacity: 0;
+		transition: 0.5s;
+	}
+
+	#cv div a:hover p:after 
+	{
+		opacity: 1;
+		  -webkit-animation: text-opacity 0.4s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+	          animation: text-opacity 0.4s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+
+	}
+
+
+
+@media all and (max-width: 1170px)
+{
+
+}
+
+@media all and (max-width: 980px)
+{
+	#cv
+	{	
+		background: #f2f2f2;
+		padding-top: 40px;
+		padding-bottom: 40px;
+
+		div a
+		{
+			
+			width: 260px;
+			height: 50px;
+
+			p
+			{
+				font-size: 19px;
+			}
+		}
+	}	
+}
+
+@media all and (max-width: 768px)
+{
+
+}
+
+@media all and (max-width: 480px)
+{
+	#cv
+	{	
+		padding-top: 30px;
+		padding-bottom: 30px;
+
+		div a
+		{
+			
+			width: 200px;
+			height: 40px;
+
+			p
+			{
+				font-size: 15px;
+				padding-bottom: 2px;
+			}
+		}
+	}	
+
+	#cv div a
+	{
+		border: 2px solid $orange;
+	}
+}
+
+@media all and (max-width: 320px)
+{
+}

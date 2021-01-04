@@ -1,0 +1,374 @@
+
+///////////////
+//MY SKILLS
+///////////////
+
+.bg-grey
+{
+	background-color: #F9F9F9;
+	max-width: 1920px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#my-skills
+{
+	max-width: 1343px;
+	margin: auto;
+	transform: scale(0.8);
+
+	h2
+	{
+		padding-top: 0;
+		font-size: 63px!important;
+	}
+
+
+
+	#container-skills
+	{
+		display: flex;
+		justify-content: space-between;
+		margin-top: 30px;
+	}
+
+	#dev-web-container,#design-container
+	{
+		width: 48%;
+		border-radius: 10px;
+		display: flex;
+		flex-direction: column;
+		background-color: #fff;
+		box-shadow: 2px 5px 20px rgba(14,11,83,0.15);	
+		transition: transform 0.5s ease-in-out;
+
+		img
+		{
+			margin-left: auto;
+			margin-right: auto;
+			padding-top: 60px;
+			padding-bottom: 40px;
+			width: 87px;
+		}
+
+		h3
+		{
+			font-family: 'Montserrat', sans-serif;
+			font-size: 35px;
+			font-weight: 700;
+			color: $blue;
+			text-align: center; 
+			border-bottom: 2px solid $blue;
+			width: 60%;
+			margin-left: auto;
+			margin-right: auto;
+			padding-bottom: 30px;
+		}
+
+		div
+		{
+			display: flex;
+			flex-direction: column;
+			margin-left: auto;
+			margin-right: auto;
+			width: 70%; 
+
+
+		h4
+		{
+			font-family: 'Montserrat', sans-serif;
+			font-size: 31px;
+			font-weight: 500;
+			color: $blue;
+			padding-top: 55px;
+			padding-bottom: 35px;
+		}
+
+			.span-bar
+			{
+				position: relative;
+				width: 100%;
+				*
+				{
+					position: absolute;
+				}
+			}
+
+			span.barre
+			{
+				border: 4px solid #FFE4C5;
+				width: 100%;
+			}
+			span.fill1
+			{
+				border: 4px solid $orange;
+				width: 80%;
+			}
+			span.fill2
+			{
+				border: 4px solid $orange;
+				width: 35%;
+			}
+			span.fill3
+			{
+				border: 4px solid $orange;
+				width: 75%;
+			}
+			span.fill4
+			{
+				border: 4px solid $orange;
+				width: 45%;
+			}
+			span.fill5
+			{
+				border: 4px solid $orange;
+				width: 35%;
+			}
+		}
+
+		p
+		{
+			text-align: center;
+			color: $blue;
+			font-family: 'Montserrat', sans-serif;
+			font-size: 23px;
+			font-weight: 500;
+		}
+
+		p:first-of-type
+		{
+			padding-top: 55px;
+			padding-bottom: 16px;
+		}
+
+		p:last-of-type
+		{
+			padding-bottom: 72px;
+			font-weight: 600;
+		}
+
+	}
+	
+
+	#container-tools
+	{
+		transition: transform 0.5s ease-in-out;
+		margin-top: 30px;
+		//border: solid 3px $blue;
+		border-radius: 10px;
+		padding-left: 10%;
+		padding-right: 10%;
+		display: flex;
+		flex-direction: column;
+		box-shadow: 2px 5px 20px rgba(14,11,83,0.15);
+
+		div#tools
+		{
+			display: grid;
+			grid-template-columns: repeat(5, auto);
+			grid-gap: 85px;
+			margin-left: auto;
+			margin-right: auto;
+			padding-top: 70px;
+			padding-bottom: 70px;
+
+			*
+			{
+				max-height: 100%;
+				max-width: 100%;
+				margin: auto;
+			}
+		}
+
+		h3
+		{
+			font-family: 'Montserrat', sans-serif;
+			font-size: 30px;
+			font-weight: 700;
+			color: $blue;
+			text-align: center; 
+			border-bottom: 2px solid $blue;
+			width: 60%;
+			margin-left: auto;
+			margin-right: auto;
+			padding-bottom: 30px;
+			padding-top: 60px;
+		}
+	}
+}
+
+
+@media all and (max-width: 980px)
+{
+	#my-skills #container-tools div#tools
+	{
+		grid-gap: 60px;
+	}
+
+	#my-skills {
+	    transform: scale(0.90);
+
+	    h2
+	    {
+	    	font-size: 54px!important;
+	    }
+	}
+
+	#my-skills #dev-web-container img, #my-skills #design-container img
+	{
+		width: 17%;
+	}
+	#my-skills #dev-web-container h3, #my-skills #design-container h3
+	{
+		font-size: 30px;
+		width: 70%;
+	}
+
+	#my-skills #container-tools h3
+	{
+		font-size: 26px;
+		width: 70%;
+	}
+
+	#my-skills #dev-web-container div h4, #my-skills #design-container div h4
+	{
+		font-size: 23px;
+	    padding-top: 45px;
+	    padding-bottom: 30px;
+	}
+
+	#my-skills #dev-web-container p, #my-skills #design-container p
+	{
+		font-size: 19px;
+	}
+}
+
+@media all and (max-width: 768px)
+{
+	#my-skills #container-tools div#tools {
+	    grid-template-columns: repeat(4, auto);
+	    grid-gap: 50px;
+	}
+
+	#my-skills #dev-web-container div span.barre, #my-skills #design-container div span.barre
+	{
+		border: 3px solid #FFE4C5;
+	}
+	#my-skills #dev-web-container div span.fill1, #my-skills #design-container div span.fill1
+	{
+		border: 3px solid $orange;
+	}
+	#my-skills #dev-web-container div span.fill2, #my-skills #design-container div span.fill2
+	{
+		border: 3px solid $orange;
+	}
+	#my-skills #dev-web-container div span.fill3, #my-skills #design-container div span.fill3
+	{
+		border: 3px solid $orange;
+	}
+	#my-skills #dev-web-container div span.fill4, #my-skills #design-container div span.fill4
+	{
+		border: 3px solid $orange;
+	}
+	#my-skills #dev-web-container div span.fill5, #my-skills #design-container div span.fill5
+	{
+		border: 3px solid $orange;
+	}
+
+	#my-skills {
+    transform: scale(0.95);
+	}
+
+	#my-skills h2
+	{
+		padding-top: 70px;
+	}
+
+	#my-skills #dev-web-container div h4, #my-skills #design-container div h4
+	{
+		font-size: 19px;
+		padding-top: 35px;
+    	padding-bottom: 20px;
+	}
+
+	#my-skills #dev-web-container p, #my-skills #design-container p
+	{
+		font-size: 16px;
+	}
+
+	#my-skills #dev-web-container h3, #my-skills #design-container h3
+	{
+		font-size: 24px;
+	}
+
+	#my-skills #container-tools h3
+	{
+		font-size: 22px;
+	}
+
+
+	#my-skills h2
+	{
+		font-size: 38px!important;
+	}
+}
+
+@media all and (max-width: 480px)
+{
+	#my-skills #container-tools div#tools {
+	    grid-template-columns: repeat(3, auto);
+	    grid-gap: 3em;
+	}
+
+	#my-skills #container-skills
+	{
+		display: block;
+	}
+
+	#my-skills #dev-web-container, #my-skills #design-container
+	{
+		width: 100%;
+	}
+
+	#my-skills
+	{
+		transform: scale(1);
+	}
+
+	#my-skills h2
+	{
+		font-size: 33px !important;
+		padding-top: 100px;
+	}
+
+	#dev-web-container
+	{
+		margin-bottom: 30px;
+	}
+
+	#my-skills #design-container
+	{
+		//height: 100vh;
+		padding-bottom: 70px;
+	}
+
+	#my-skills #dev-web-container div h4, #my-skills #design-container div h4
+	{
+		font-size: 21px;
+	}
+
+	#my-skills #dev-web-container p, #my-skills #design-container p
+	{
+		font-size: 17px;
+	}
+
+}
+
+@media all and (max-width: 320px)
+{
+	#my-skills #container-tools div#tools
+	{
+		grid-gap: 2em;
+	}
+
+}
